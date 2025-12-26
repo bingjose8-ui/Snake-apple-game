@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snake Apple Game</title>
+<style>
+  body { display: flex; flex-direction: column; align-items: center; font-family: Arial; }
+  canvas { background: #111; margin-top: 20px; display: block; }
+  #score { color: white; font-size: 20px; margin-top: 10px; }
+  button { margin: 5px; padding: 10px 20px; font-size: 16px; }
+</style>
+</head>
+<body>
+
+<h1>Snake Apple Game</h1>
+<div>
+  <button onclick="changeDirection('ArrowUp')">↑</button>
+  <button onclick="changeDirection('ArrowDown')">↓</button>
+  <button onclick="changeDirection('ArrowLeft')">←</button>
+  <button onclick="changeDirection('ArrowRight')">→</button>
+</div>
+<canvas id="gameCanvas" width="600" height="400"></canvas>
+<div id="score">Apples eaten: 0</div>
+
+<script src="game.js"></script>
+</body>
+</html>
